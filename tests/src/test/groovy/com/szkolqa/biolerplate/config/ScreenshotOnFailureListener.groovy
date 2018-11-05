@@ -10,6 +10,12 @@ class ScreenshotOnFailureListener extends AbstractRunListener {
 
     void error(ErrorInfo error) {
         def screenshot = new ScreenshotManager(driver)
-        screenshot.takeScreenshot(error.method.parent.filename, error.method.name)
+        screenshot.takeScreenshot(message(error.method.parent.filename), message(error.method.name))
+    }
+
+    static def message(String text) {
+        if (text == null) {
+            "missing name"
+        }
     }
 }

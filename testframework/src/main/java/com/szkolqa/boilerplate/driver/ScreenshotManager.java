@@ -24,7 +24,7 @@ public class ScreenshotManager {
     }
 
     public void takeScreenshot(String className, String method) {
-        if (driver instanceof TakesScreenshot) {
+        if (driver instanceof TakesScreenshot && className != null) {
             TakesScreenshot screenshotTakingDriver = (TakesScreenshot) this.driver;
             try {
                 File localScreenshots = new File(new File("target"), "screenshots");
@@ -39,7 +39,7 @@ public class ScreenshotManager {
                 logger.error("Unable to take screenshot", e1);
             }
         } else {
-            logger.info("Driver '{}' can't take screenshots so skipping it.", driver.getClass());
+            logger.info("Driver '{}' can't take screenshots so skipping it.");
         }
     }
 
