@@ -12,6 +12,9 @@ public class BasePageImpl extends PageObject implements BasePage {
     @FindBy(id = "search")
     private WebElement search;
 
+    @FindBy(xpath = "//ul[@class='sug']")
+    private WebElement sug;
+
     protected WebElementsHandler webElementsHandler;
     protected Wait wait;
 
@@ -25,7 +28,8 @@ public class BasePageImpl extends PageObject implements BasePage {
     @Override
     public SearchForm searchStore(String store) {
         webElementsHandler.typeInputText(store, search.findElement(By.xpath(".//input[@class='searchField']")));
-        wait.waintUntilElementByCountIsGreaterThenNumber(search, By.tagName("li"), 1);
+        wait.visibilityOf(sug);
+        wait.waintUntilElementByCountIsGreaterThenNumber(search, By.tagName("li"), 2);
         return new SearchFormImpl(driver);
     }
 }
