@@ -8,4 +8,8 @@ public interface CouponCodesSite {
     CouponCodesSite clickCopy();
 
     String getCouponValue();
+
+    boolean isCouponCodeIsShown();
+
+    BasePage switchToOriginalTab();
 }

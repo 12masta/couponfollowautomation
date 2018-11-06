@@ -48,4 +48,16 @@ public class CouponCodesSiteImpl extends BasePageImpl implements CouponCodesSite
     public String getCouponValue() {
         return couponCode.getText();
     }
+
+    @Override
+    public boolean isCouponCodeIsShown() {
+        return webElementsHandler.isDisplayed(couponCode);
+    }
+
+    @Override
+    public BasePage switchToOriginalTab() {
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(0));
+        return new BasePageImpl(driver);
+    }
 }
