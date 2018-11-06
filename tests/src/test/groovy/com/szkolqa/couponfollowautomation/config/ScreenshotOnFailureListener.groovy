@@ -1,6 +1,6 @@
-package com.szkolqa.biolerplate.config
+package com.szkolqa.couponfollowautomation.config
 
-import com.szkolqa.boilerplate.driver.ScreenshotManager
+import com.szkolqa.couponfollowautomation.driver.ScreenshotManager
 import org.openqa.selenium.WebDriver
 import org.spockframework.runtime.AbstractRunListener
 import org.spockframework.runtime.model.ErrorInfo

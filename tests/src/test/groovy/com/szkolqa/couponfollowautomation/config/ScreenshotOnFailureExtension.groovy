@@ -1,4 +1,4 @@
-package com.szkolqa.biolerplate.config
+package com.szkolqa.couponfollowautomation.config
 
 import org.spockframework.runtime.extension.IGlobalExtension
 import org.spockframework.runtime.model.SpecInfo

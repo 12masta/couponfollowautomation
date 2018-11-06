@@ -1,4 +1,4 @@
-package com.szkolqa.boilerplate.driver;
+package com.szkolqa.couponfollowautomation.driver;
 
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;

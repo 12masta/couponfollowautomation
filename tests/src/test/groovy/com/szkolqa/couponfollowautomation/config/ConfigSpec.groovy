@@ -1,4 +1,4 @@
-package com.szkolqa.biolerplate.config
+package com.szkolqa.couponfollowautomation.config
 
 import io.qameta.allure.Epic
 import io.qameta.allure.Feature

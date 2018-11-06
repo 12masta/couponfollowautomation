@@ -1,4 +1,4 @@
-package com.szkolqa.boilerplate.pageobjects;
+package com.szkolqa.couponfollowautomation.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 

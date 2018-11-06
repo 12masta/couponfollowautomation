@@ -1,4 +1,4 @@
-package com.szkolqa.boilerplate.driver;
+package com.szkolqa.couponfollowautomation.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
-package com.szkolqa.biolerplate.init
+package com.szkolqa.couponfollowautomation.init
 
-import com.szkolqa.biolerplate.BaseSpec
+import com.szkolqa.couponfollowautomation.BaseSpec
 import io.qameta.allure.Epic
 import io.qameta.allure.Feature
 

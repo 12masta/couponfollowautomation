@@ -1,4 +1,4 @@
-package com.szkolqa.boilerplate.driver;
+package com.szkolqa.couponfollowautomation.driver;
 
 public interface UrlResolver {
     void goToRelativeUrl(String relativeUrl);

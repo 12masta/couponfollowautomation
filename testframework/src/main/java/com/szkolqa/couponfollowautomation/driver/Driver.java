@@ -1,4 +1,4 @@
-package com.szkolqa.boilerplate.driver;
+package com.szkolqa.couponfollowautomation.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

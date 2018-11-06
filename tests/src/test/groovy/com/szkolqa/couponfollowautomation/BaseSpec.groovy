@@ -1,10 +1,10 @@
-package com.szkolqa.biolerplate
+package com.szkolqa.couponfollowautomation
 
-import com.anotherchrisberry.spock.extensions.retry.RetryOnFailure
-import com.szkolqa.biolerplate.config.ScreenshotOnFailureListener
-import com.szkolqa.boilerplate.driver.Driver
-import com.szkolqa.boilerplate.pageobjects.HomePage
-import com.szkolqa.boilerplate.pageobjects.HomePageImpl
+
+import com.szkolqa.couponfollowautomation.config.ScreenshotOnFailureListener
+import com.szkolqa.couponfollowautomation.driver.Driver
+import com.szkolqa.couponfollowautomation.pageobjects.HomePage
+import com.szkolqa.couponfollowautomation.pageobjects.HomePageImpl
 import org.openqa.selenium.WebDriver
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
