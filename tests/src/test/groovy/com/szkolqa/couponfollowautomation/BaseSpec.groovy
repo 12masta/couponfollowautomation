@@ -13,7 +13,7 @@ import spock.lang.Specification
 @RetryOnFailure(times = 3)
 class BaseSpec extends Specification {
     public static String env = System.getProperty('env', 'dev')
-    public static String browser = System.getProperty('browser', '')
+    public static String browser = System.getProperty('browser', 'chrome')
     private static Logger logger = LoggerFactory.getLogger(BaseSpec.class)
     protected WebDriver driver
     protected HomePage homePage
@@ -22,7 +22,6 @@ class BaseSpec extends Specification {
         setupDriver()
         getScreenshotListener().driver = driver
         homePage = new HomePageImpl(driver)
-
     }
 
     def cleanup() {
